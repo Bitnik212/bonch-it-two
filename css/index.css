@@ -1,0 +1,80 @@
+:root {
+    --main-x-padding: 36px;
+    --block-bottom-margin: 24px;
+    --color-1000: #49443F;
+    --color-900: #736F63;
+    --color-800: #888576;
+    --color-700: #9C9C88;
+    --color-600: #E0E2C9;
+    --color-500: #E5E5CE;
+    --color-400: #E8E6D3;
+    --color-300: #EBE8D9;
+    --color-200: #EFEADE;
+    --color-100: #F2ECE4;
+    --color-primary: var(--color-300);
+    --color-secondary: var(--color-600);
+    --color-background: var(--color-1000);
+}
+
+body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    padding: var(--block-bottom-margin) var(--main-x-padding) var(--block-bottom-margin) var(--main-x-padding);
+    background: var(--color-800);
+    margin-bottom: 30px;
+}
+
+header .logo {
+    font-size: 32px;
+}
+
+.block {
+    margin: calc(var(--block-bottom-margin) / 2) var(--main-x-padding) var(--block-bottom-margin);
+}
+
+section.title {
+    position: relative;
+    border-radius: 5px;
+}
+
+section.title div.image {
+    background: linear-gradient(to bottom, transparent, black), url("https://storage.yandexcloud.net/notes-bitt-moe/memos/2023/04/22/161be161-4888-41f3-a7c3-92c5981d35a6.jpg") center no-repeat;
+    background-size: cover;
+    height: 400px;
+    min-height: 120px;
+    filter: blur(3px);
+}
+
+section.title div.title {
+    position: absolute;
+    z-index: 100;
+    font-size: 32px;
+    bottom: 40px;
+    left: 40px;
+}
+
+#cats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cat-card {
+    margin: var(--main-x-padding) 4px var(--main-x-padding) 4px;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+#cat-1.cat-card {
+    background: url("https://storage.yandexcloud.net/notes-bitt-moe/memos/2023/04/22/b1994291-a4e5-4bde-b72c-a4cd9b0eb438.jpg") ;
+}
